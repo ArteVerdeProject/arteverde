@@ -1,2 +1,2 @@
 # arteverde
-<a href='./arteverde/home'>Pagina inicial</a>
+<a href='./arteverde/home/index.html'>Pagina inicial</a>
