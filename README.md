@@ -1,3 +1,3 @@
 # arteverde
-<a href='./arteverde /home/index.html'>Pagina inicial</a>
-aa
+Ta perdido? talvez você esteja procurando pela: <a href='./arteverde /home/index.html'>Pagina inicial</a>
+
