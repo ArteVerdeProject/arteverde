@@ -1,0 +1,415 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#titulo_pag{
+    font-size: 60px;
+}
+
+#pegavalor{
+    width: 50%;
+}
+
+/* */
+
+/* Container do cabeçalho*/
+
+li a {
+    text-decoration: none;
+}
+
+.header {
+
+    background-color: #fafaf7;
+    height: 120px;
+
+}
+
+    .busca {
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #14342b;
+        height: 60%;
+
+    }
+
+        form {
+            border: 1.5px solid white;
+            border-radius: 5px;
+            padding: 5px;
+            margin-right: 40px;
+        
+        }
+        
+            form input, form button {
+                font-size: 18px;
+                border-radius: 4px;
+                border: none;
+                padding: 4px;
+            }
+        
+            form button {
+                cursor: pointer;
+                background: none;
+                color: white;
+            }
+        
+            form button:hover {
+                background-color: whitesmoke;
+                color: #14342b;
+            }
+
+            i {
+                color: white;
+            }
+
+            i:hover {
+                color: #14342b;
+            }
+
+    .logospace {
+
+        display: flex;
+        align-items: center;
+        width: 20%;
+        height: 100%;
+        margin-left: 40px;
+
+    }
+
+    #logotipo {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .logospace h1 {
+        color: white;
+    }
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    background-color: #fafaf7;
+    height: 40%;
+    justify-content: space-between;
+
+}
+
+    .nav-list {
+        display: flex;
+        margin-left: 40px;
+        list-style: none;
+        gap: 32px;
+    }
+
+    .right-nav {
+        margin: 40px;
+
+    }
+
+    li a {
+        color: #303030;
+    }
+
+    #button-login {
+        font-weight: bold;
+        padding: 12px 38px;
+        border-radius: 3px;
+        box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
+        line-height: 1.25;
+        background: #fde311;
+        text-decoration: none;
+        color: #303030;
+        font-size: 14px;
+        letter-spacing: .08em;
+        text-transform: uppercase;
+        position: relative;
+        overflow: hidden;
+
+      }
+
+      #button-register {
+        border-radius: 3px;
+        margin-right: 10px;
+        padding: 8px 20px;
+        border: 1px solid #303030;
+        color: #303030;
+        text-decoration: none;
+      }
+      
+
+
+/* */
+
+.b_texto{
+    background-color: yellow;
+    border: 0px;
+    padding: 2px;
+}
+
+.secao{
+    background-color: blueviolet;
+    height: 300px;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    height: 70%;
+}
+
+/*Tela principal e nome da loja*/
+
+
+.banner-principal {
+    color: white;
+    height: 500px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+    .banner-principal img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .titulo-banner{
+        display: flex;
+        height: 50%;
+        margin: auto;
+        width: 100%;
+        position: absolute;
+        transition: translate(-50%, 50%);
+        bottom: 50%;
+        top: 50%;
+        text-align: center;
+        padding: 10px;
+
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .textobanner {
+        font-size: 40px;
+    }
+
+    .textobanner h1 {
+        color: white;
+
+    }
+
+    .textobanner p {
+        color: white;
+        font-size: 16px;
+
+    }
+        
+    .bott {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        background-color: #fde311;
+        color: #303030;
+        border-radius: 200px;
+        width: 150px;
+        height: 40px;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: .08em;
+        padding: 12px 38px;
+        box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
+        }
+
+    .bott a {
+        color: #303030;
+        text-decoration: none;
+
+    }
+
+/*O carrossel foi adicionado em outro documento*/
+
+/*Vitrine*/
+
+.container_principal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .vitrine {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .vitrine .estufa {
+        background-color: #efeff0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        
+    }
+
+        .produto_organico {
+            color: white;
+            background-color: indigo;
+            margin: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 250px;
+            height: 650px;
+
+        }
+
+            .img_produto {
+                background-color: blue;
+                width: 100%;
+                height: 80%;
+            }
+
+            .imagee {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+        .rotulo {
+            background-color: #14342b;
+            width: 100%;
+            height: 20%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+            .tipo_prod {
+                font-size: 20px;
+                text-transform: uppercase;
+                letter-spacing: .08em;
+                
+            }
+
+            .rotulo hr {
+                margin: 7px;
+                width: 15%
+            }
+
+        .botao_comprar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background-color: #009145;
+            width: 150px;
+            height: 30px;
+            border-radius: 15px;
+            margin-top: 5px;
+        }
+
+            .botao_comprar a {
+                color: white;
+                border-radius: 100%;
+                padding: 10px 40px;
+                text-decoration: none;
+            }
+
+            .botao_comprar a:hover {
+                color: #fde311;
+                border-radius: 100%;
+                padding: 10px 40px;
+                text-decoration: none;
+            }
+
+/*Vitrine Coadjuvante*/
+
+
+
+.sub_vitrine {
+    background-color: #009145;
+    width: 90%;
+    height: 220px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.amostra {
+    background-color: #14342b;
+    width: 250px;
+    height: 180px;
+    margin: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+/*Rodapé*/
+
+footer {
+    color: white;
+    background-color: #14342b;
+    width: 90%;
+    height: 150px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.primeira_metade {
+    background-color: #14342b;
+    width: 30%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.segunda_metade {
+    background-color: #14342b;
+    width: 30%;
+}
+
+.redes_sociais {
+    width: 100%;
+    height: 100%;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.rede {
+    display: flex;
+}
+
+.icon img {
+    width: 25px;
+}
+
+.user_contat a {
+    color: white;
+    margin-left: 10px;
+    font-size: 12px;
+}
