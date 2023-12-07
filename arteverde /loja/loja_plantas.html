@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja - Plantas</title>
+    <link rel="stylesheet" href="loja_plantas.css">
+    <script src="https://kit.fontawesome.com/1e592b5726.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="tudo">
+    <!--- Header -->
+        <div class="header">
+            <div class="busca">
+                
+                <div class="logospace">
+                <img id="logotipo" src="./imgs/Arteverde.png">
+                </div>
+
+                <form action="#" method="post">
+                    <input type="text" name="search" id="search" placeholder="Faça sua Busca">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+
+            </div>
+            <div class="menu">
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#">Página Inicial</a></li>
+                        <li><a href="#">Plantas</a></li>
+                        <li><a href="#">Artesanatos</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+
+                <div class="right-nav">
+                    <a href="#" class="button" id="button-register">Registrar</a>
+                    <a href="#" class="button" id="button-login">Entrar</a>
+                </div>
+            </div>
+        </div>
+    <!----->
+ <!--Banner-->
+
+    <section class="banner-principal">
+        <img src="./imgs/garden-banner.jpg">
+    </section>
+
+    <div class="titulo">
+        <h1 id="titulo_pag">Plantas</h1>
+    </div>
+<!---->
+
+           
+        <div class="paineis">
+            <div class="painel_lateral_E">
+                <h2>Filtros</h2>
+                <div class="filtros">
+                    <h3>Categoria</h3>
+                    <div class="tipos">
+                        <ul>
+                            <li><input type="checkbox">Flores</li>
+                            <li><input type="checkbox">Ervas</li>
+                            <li><input type="checkbox">Herbáceas</li>
+                            <li><input type="checkbox">Suculentas</li>
+                            <li><input type="checkbox">Frutos</li>
+                            <li><input type="checkbox">Cactos</li>
+                            <li><input type="checkbox">Outros</li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <div class="valores">
+                    <h3>Preço</h3>
+                    <div class="aplicarvalores">
+                        <input type="text" value="Valor máximo" id="pegavalor">
+                        <br>
+                        <input type="text" value="Valor mínimo" id="pegavalor">
+                        <br>
+                        <button id="aplicar" class=botao-amarelo>Aplicar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="painel_lateral_D">
+                <div class="container_principal">
+
+                    <div class="vitrine">
+
+                    <div class="estufa">
+                        <div class="produto_organico">
+                            <div class="img_produto"><img class="imagee" src="./imgs/roseira-vermelha.jpg"></div>
+                            <div class="rotulo">
+                                <div class="tipo_prod">Roseira Vermelha</div>
+                                <p>Por R$49.99</p>
+                                <div class="botao_comprar"><a href="#">Comprar</a></div>
+                            </div>
+                        </div>
+                        <div class="produto_organico">
+                            <div class="img_produto"><img class="imagee" src="./imgs/camomila.jpg.webp"></div>
+                            <div class="rotulo">
+                                <div class="tipo_prod">Camomila</div>
+                                <p>Por R$20.99</p>
+                                <div class="botao_comprar"><a href="#">Comprar</a></div>
+                            </div>
+                        </div>
+                        <div class="produto_organico">
+                            <div class="img_produto"><img class="imagee" src="./imgs/samambaia-americana.jpg"></div>
+                            <div class="rotulo">
+                                <div class="tipo_prod">Samambaia americana</div>
+                                <p>Por R$59.99</p>
+                                <div class="botao_comprar"><a href="#">Comprar</a></div>
+                            </div>
+                        </div>
+                        <div class="produto_organico">
+                            <div class="img_produto"><img class="imagee" src="./imgs/zamioculca.png"></div>
+                            <div class="rotulo">
+                                <div class="tipo_prod">Zamioculca</div>
+                                <p>Por R$59.99</p>
+                                <div class="botao_comprar"><a href="#">Comprar</a></div>
+                            </div>
+                        </div>
+                        <div class="produto_organico">
+                            <div class="img_produto"><img class="imagee" src="./imgs/pimentao-organico.jpg"></div>
+                            <div class="rotulo">
+                                <div class="tipo_prod">Pimentão orgânico</div>
+                                <p>Por R$29.99</p>
+                                <div class="botao_comprar"><a href="#">Comprar</a></div>
+                            </div>
+                        </div>
+                        <div class="produto_organico">
+                            <div class="img_produto"><img class="imagee" src="./imgs/camedorea-elegante.png"></div>
+                            <div class="rotulo">
+                                <div class="tipo_prod">Camedórea-elegante</div>
+                                <p>Por R$49.99</p>
+                                <div class="botao_comprar"><a href="#">Comprar</a></div>
+                            </div>
+                        </div>
+                        <div class="produto_organico">
+                            <div class="img_produto"><img class="imagee" src="./imgs/rabo-de-macaco.jpg"></div>
+                            <div class="rotulo">
+                                <div class="tipo_prod">Rabo-de-macaco</div>
+                                <p>Por R$119.99</p>
+                                <div class="botao_comprar"><a href="#">Comprar</a></div>
+                            </div>
+                        </div>
+                        <div class="produto_organico">
+                            <div class="img_produto"><img class="imagee" src="./imgs/coracao-magoado.png"></div>
+                            <div class="rotulo">
+                                <div class="tipo_prod">Coração-magoado</div>
+                                <p>Por R$99.99</p>
+                                <div class="botao_comprar"><a href="#">Comprar</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>        
+        </div>
+    </div>
+</body>
+</html>
