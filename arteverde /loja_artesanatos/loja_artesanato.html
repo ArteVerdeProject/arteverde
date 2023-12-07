@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artesanato</title>
+    <link rel="stylesheet" href="loja_artesanato.css">
+</head>
+<body>
+    <div class="tudo">
+        <!--- Header -->
+            <div class="header">
+                <div class="busca">
+                    
+                    <div class="logospace">
+                    <img id="logotipo" src="./imgs/Arteverde.png">
+                    </div>
+    
+                    <form action="#" method="post">
+                        <input type="text" name="search" id="search" placeholder="Faça sua Busca">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+    
+                </div>
+                <div class="menu">
+                    <nav class="nav">
+                        <ul class="nav-list">
+                            <li><a href="#">Página Inicial</a></li>
+                            <li><a href="#">Plantas</a></li>
+                            <li><a href="#">Artesanatos</a></li>
+                            <li><a href="#">Contato</a></li>
+                        </ul>
+                    </nav>
+    
+                    <div class="right-nav">
+                        <a href="#" class="button" id="button-register">Registrar</a>
+                        <a href="#" class="button" id="button-login">Entrar</a>
+                    </div>
+                </div>
+            </div>
+        <!----->
+     <!--Banner-->
+    
+        <section class="banner-principal">
+            <img src="./imgs/banner-artesanatos.jpg">
+        </section>
+    
+        <div class="titulo">
+            <h1 id="titulo_pag">Artesanatos</h1>
+        </div>
+    <!---->
+    
+               
+            <div class="paineis">
+                <div class="painel_lateral_E">
+                    <h2>Filtros</h2>
+                    <div class="filtros">
+                        <h3>Categoria</h3>
+                        <div class="tipos">
+                            <ul>
+                                <li><input type="checkbox">Vasos</li>
+                                <li><input type="checkbox">Placas</li>
+                                <li><input type="checkbox">Duendes</li>
+                                <li><input type="checkbox">Casas de Passarinho</li>
+                                <li><input type="checkbox">Decorativos p/ parede</li>
+                                <li><input type="checkbox">Outros decorativos</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="valores">
+                        <h3>Preço</h3>
+                        <div class="aplicarvalores">
+                            <input type="text" value="Valor máximo" id="pegavalor">
+                            <br>
+                            <input type="text" value="Valor mínimo" id="pegavalor">
+                            <br>
+                            <button id="aplicar" class=botao-amarelo>Aplicar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="painel_lateral_D">
+                    <div class="container_principal">
+    
+                        <div class="vitrine">
+    
+                        <div class="estufa">
+                            <div class="produto_organico">
+                                <div class="img_produto"><img class="imagee" src="./imgs/casa-de-passarinho.jpeg"></div>
+                                <div class="rotulo">
+                                    <div class="tipo_prod">Casa de passarinho</div>
+                                    <p>Por R$89.99</p>
+                                    <div class="botao_comprar"><a href="#">Comprar</a></div>
+                                </div>
+                            </div>
+                            <div class="produto_organico">
+                                <div class="img_produto"><img class="imagee" src="./imgs/cogumelo-ceramica.jpg"></div>
+                                <div class="rotulo">
+                                    <div class="tipo_prod">Cogumelo de cerâmica</div>
+                                    <p>Por R$69.99</p>
+                                    <div class="botao_comprar"><a href="#">Comprar</a></div>
+                                </div>
+                            </div>
+                            <div class="produto_organico">
+                                <div class="img_produto"><img class="imagee" src="./imgs/duendes.jpeg"></div>
+                                <div class="rotulo">
+                                    <div class="tipo_prod">Duendes de jardim</div>
+                                    <p>Por R$59.99</p>
+                                    <div class="botao_comprar"><a href="#">Comprar</a></div>
+                                </div>
+                            </div>
+                            <div class="produto_organico">
+                                <div class="img_produto"><img class="imagee" src="./imgs/fonte para passarinhos.jpeg"></div>
+                                <div class="rotulo">
+                                    <div class="tipo_prod">Fonte</div>
+                                    <p>Por R$299.99</p>
+                                    <div class="botao_comprar"><a href="#">Comprar</a></div>
+                                </div>
+                            </div>
+                            <div class="produto_organico">
+                                <div class="img_produto"><img class="imagee" src="./imgs/placa.jpeg"></div>
+                                <div class="rotulo">
+                                    <div class="tipo_prod">Placa motivacional</div>
+                                    <p>Por R$59.99</p>
+                                    <div class="botao_comprar"><a href="#">Comprar</a></div>
+                                </div>
+                            </div>
+                            <div class="produto_organico">
+                                <div class="img_produto"><img class="imagee" src="./imgs/vaso-de-joaninha.jpeg"></div>
+                                <div class="rotulo">
+                                    <div class="tipo_prod">Vaso de joaninha</div>
+                                    <p>Por R$49.99</p>
+                                    <div class="botao_comprar"><a href="#">Comprar</a></div>
+                                </div>
+                            </div>
+                            <div class="produto_organico">
+                                <div class="img_produto"><img class="imagee" src="./imgs/vaso-de-parede.jpeg"></div>
+                                <div class="rotulo">
+                                    <div class="tipo_prod">Vaso de parede</div>
+                                    <p>Por R$119.99</p>
+                                    <div class="botao_comprar"><a href="#">Comprar</a></div>
+                                </div>
+                            </div>
+                            <div class="produto_organico">
+                                <div class="img_produto"><img class="imagee" src="./imgs/abelhas-ceramica.jpeg"></div>
+                                <div class="rotulo">
+                                    <div class="tipo_prod">Abelhas de cerâmica</div>
+                                    <p>Por R$79.99</p>
+                                    <div class="botao_comprar"><a href="#">Comprar</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>        
+            </div>
+        </div>
+</body>
+</html>
