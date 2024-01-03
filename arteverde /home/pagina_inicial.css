@@ -363,6 +363,8 @@ li a {
     border-radius: 10px;
 }
 
+
+
 /*Rodapé*/
 
 footer {
@@ -377,7 +379,7 @@ footer {
 
 .primeira_metade {
     background-color: #14342b;
-    width: 30%;
+    width: 50%;
     margin-top: 10px;
     margin-bottom: 5px;
     margin-left: 10px;
@@ -412,4 +414,127 @@ footer {
     color: white;
     margin-left: 10px;
     font-size: 12px;
+}
+
+
+
+/*Responsividade do Site*/
+
+
+/*Responsividade --- Vitrine*/
+
+@media (max-width: 434px) {
+    .textobanner {
+        font-size: 30px;
+    }
+
+    .bott {
+        width: 140px;
+        height: 30px;
+        font-size: 10px;
+    }
+}
+
+/*Formato Medio --- Vitrine Coadjuvante*/
+
+@media (max-width: 850px) {
+    #a1 {
+        display: none;
+    }
+}
+
+@media (max-width: 780px) {
+    #a2, #a3 {
+        display: none;
+    }
+}
+
+@media (max-width: 650px) {
+    #a4 {
+        display: none;
+    }
+
+    .amostra {
+        width: 100%;
+        margin: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border-radius: 0px;
+    }
+}
+
+/*Responsividade --- Rodapé*/
+
+@media (max-width: 700px) {
+    .user_contat {
+        display: none;
+    }
+}
+
+@media (max-width: 890px) {
+    .primeira_metade {
+        width: 80%;
+    }
+
+    .cop {
+        font-size: 10px;
+    }
+}
+
+
+/*Responsividade --- Vitrine*/
+
+
+@media (max-width: 620px) {
+    .produto_organico {
+        width: 200px;
+        height: 600px;
+    }
+
+    #outras_plantas {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 520px) {
+    .produto_organico {
+        width: 150px;
+        height: 420px;
+    }
+
+    .botao_comprar {
+        width: 120px;
+        height: 25px;
+        font-size: 12px;
+    }
+
+    .tipo_prod {
+        font-size: 13px;
+    }
+
+    #outras_plantas {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 420px) {
+    .produto_organico {
+        width: 100px;
+        height: 380px;
+    }
+
+    .tipo_prod {
+        font-size: 10px;
+    }
+
+    .botao_comprar {
+        width: 80px;
+        height: 20px;
+        font-size: 10px;
+    }
+
+    #outras_plantas {
+        font-size: 9px;
+    }
+
 }
