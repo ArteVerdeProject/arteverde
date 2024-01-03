@@ -22,27 +22,27 @@
         .container {
             display: flex;
             background-color: white;
-            width: 80%; 
+            width: 80%;
             border-radius: 10px;
         }
 
         .container_foto {
             display: flex;
-            flex-direction: column; 
-            align-items: flex-start; 
+            flex-direction: column;
+            align-items: flex-start;
             flex: 1;
-          
+
         }
 
         .container_login {
             display: flex;
             justify-content: center;
-            align-items: center; 
-            flex: 1; 
+            align-items: center;
+            flex: 1;
         }
 
         .tela_de_login {
-            width: 100%; 
+            width: 100%;
             height: 400px;
             background-color: #48c774;
             font-family: Arial;
@@ -50,11 +50,11 @@
             border-radius: 10px;
             display: flex;
             flex-direction: column;
-            justify-content: center; 
-            align-items: center; 
+            justify-content: center;
+            align-items: center;
         }
 
-         h1 {
+        h1 {
             color: white;
             margin-bottom: 15px;
         }
@@ -68,9 +68,9 @@
 
         }
 
-        .caixa_de_texto{
+        .caixa_de_texto {
             background-color: white;
-            color:  black;
+            color: black;
             border: 1px solid gray;
             border-radius: 5px;
             padding: 10px;
@@ -78,7 +78,7 @@
             width: 80%;
         }
 
-        .botao_enviar{
+        .botao_enviar {
             width: 25%;
             color: white;
             background-color: #009145;
@@ -88,7 +88,7 @@
             border-radius: 20px;
         }
 
-        .botao_voltar{
+        .botao_voltar {
             position: absolute;
             margin-bottom: 350px;
             margin-right: 65%;
@@ -96,7 +96,6 @@
             border: 0;
             border-radius: 20px;
             color: white;
-
             display: flex;
             justify-content: center;
             align-items: center;
@@ -113,19 +112,20 @@
             text-transform: uppercase;
             overflow: hidden;
         }
-        
-        .botao_esqueceu_a_senha{
-            margin-left: 250px;
+
+        .botao_esqueceu_a_senha {
+            /* margin-left: 250px;
             margin-bottom: 10px;
             border-radius: 5px;
             padding: 5px;
-            border: 0;
+            border: 0; */
+            text-decoration: none;
             color: white;
             background-color:  #48c774;
-            width: 40%;
+            /* width: 40%; */
         }
 
-        .labels{
+        .labels {
             color: white;
             margin-bottom: 5px;
             align-self: flex-start;
@@ -133,28 +133,157 @@
 
         }
 
+        .error {
+            color: red;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+
+
+
+        @media only screen and (max-width: 767px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .container_foto {
+                order: 2;
+                margin-bottom: 20px;
+                align-items: center;
+                position: relative;
+            }
+
+            .container_login {
+                order: 1;
+                align-items: center;
+            }
+
+            .tela_de_login {
+                max-width: 300px;
+                margin: 0 auto;
+            }
+
+            .caixa_de_texto,
+            .botao_enviar {
+                width: 100%;
+                top: 0; 
+                left: 0;
+            }
+
+            .labels,
+            .error {
+                margin-left: 0;
+            }
+        }
+
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
+            .container {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .container_foto {
+                margin-right: 20px;
+                align-items: flex-start;
+            }
+
+            .container_login {
+                margin-left: 20px;
+                align-items: center;
+            }
+
+            .tela_de_login {
+                max-width: 400px;
+                margin: 0 auto;
+            }
+
+            .container_foto,
+            .container_login,
+            .tela_de_login {
+                flex: 1;
+            }
+        }
     </style>
 </head>
 <body>
-    <button class="botao_voltar">Voltar</button>
     <div class="container">
         <div class="container_foto">
-            <img src="img-paisagismo.jpg" alt="Foto" class="imagem">
+            <a href="javascript:history.back()" class="botao_voltar">Voltar</a>
+            <img src="0ebca8bc-8147-48b6-8fa3-f5d7fe888d73.jpg" alt="Foto" class="imagem">
         </div>
+
 
         <div class="container_login">
             <div class="tela_de_login">
                 <h1>Bem-vindo de volta!</h1>
                 <label for="" class="labels">E-mail</label>
-                <input type="text" class="caixa_de_texto">
+                <input type="text" class="caixa_de_texto email">
+                <small class="error email-error"></small>
                 <label for="" class="labels">Senha</label>
-                <input type="password" class="caixa_de_texto">
-                <button class="botao_esqueceu_a_senha">Esqueceu a sua senha?</button>
+                <input type="password" class="caixa_de_texto senha">
+                <small class="error senha-error"></small>
+                <a href="#"class="botao_esqueceu_a_senha">Esqueceu a sua senha?</a>
                 <br>
-                <button class='botao_enviar'>Enviar</button>
+                <button id='botao-enviar' class='botao_enviar'>Enviar</button>
+                <small class="error form-error"></small>
             </div>
         </div>
+  
     </div>
+
+    <script>
+        let emailInput = document.querySelector('.email');
+        let senhaInput = document.querySelector('.senha');
+        let botaoEnviar = document.getElementById('botao-enviar');
+        let formError = document.querySelector('.form-error');
+        let emailError = document.querySelector('.email-error');
+        let senhaError = document.querySelector('.senha-error');
+
+        botaoEnviar.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            let email = emailInput.value.trim();
+            let senha = senhaInput.value.trim();
+
+            if (email === '' || senha === '') {
+                formError.textContent = 'Você precisa preencher todos os campos.';
+                return;
+            }
+
+            if (!validacaoEmail(email)) {
+                emailError.textContent = 'O formato do e-mail deve ser ex: usuario@gmail.com';
+            } else {
+                emailError.textContent = '';
+            }
+
+            if (!validacaoSenha(senha)) {
+                senhaError.textContent = 'A senha deve ter 6 caracteres, 1 número e 1 caractere especial.';
+            } else {
+                senhaError.textContent = '';
+            }
+
+            if (validacaoEmail(email) && validacaoSenha(senha)) {
+                console.log(email);
+                console.log(senha);
+                formError.textContent = '';
+                emailError.textContent = '';
+                senhaError.textContent = '';
+            } else {
+                console.log('Requisição não atendida');
+            }
+        });
+
+        function validacaoEmail(email) {
+            let emailPattern = /^[_a-z0-9-]+(\.[a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
+            return emailPattern.test(email);
+        }
+
+        function validacaoSenha(senha) {
+            let senhaPattern = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+            return senhaPattern.test(senha);
+        }
+    </script>
 
 </body>
 </html>
