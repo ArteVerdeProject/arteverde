@@ -11,6 +11,11 @@ li a {
 }
 
 /* Container do cabeçalho*/
+
+li a {
+    text-decoration: none;
+}
+
 .header {
 
     background-color: #fafaf7;
@@ -19,6 +24,7 @@ li a {
 }
 
     .busca {
+        color: black;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -28,8 +34,7 @@ li a {
     }
 
         form {
-            
-            border: 1px solid white;
+            border: 1.5px solid white;
             border-radius: 5px;
             padding: 5px;
             margin-right: 40px;
@@ -103,6 +108,10 @@ li a {
 
     }
 
+    li a {
+        color: #303030;
+    }
+
     #button-login {
         font-weight: bold;
         padding: 12px 38px;
@@ -130,6 +139,8 @@ li a {
       }
       
 
+
+/* */
 
 /* Container do banner e subtítulo*/
 
@@ -282,4 +293,168 @@ li a {
             flex-direction: column;
             padding: 20px;
         }
+
+/* 
+==============
+RESPONSIVIDADE
+==============
+*/
+
+
+/* Cabeçalho */
+@media (max-width: 790px) {
+    .nav {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .margin-nav {
+        width: 50px;
+    }
+
+    .hamburger {
+        display: block;
+        z-index: 1;
+        background: none;
+        border: none;
+        border-top: 3px solid #14342b;
+        cursor: pointer;
+
+
+        
+
+    }
+    .hamburger::before,
+    .hamburger::after {
+        content: "   ";
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: #14342b;
+        margin-top: 5px;
+        border-radius: 5px;
+    }
+
+    .nav-list {
+
+        position: fixed;
+        top: 0;
+        left:0;
+        width: 100vw;
+        height: 100vh;
+
+        background-color: #14342b;
+        clip-path: circle(100px at 10% -100%);
+        transition: 0.6s ease-out;
+        transition: 0.6s ease-in;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        pointer-events: none;
+    }
+
+    .nav-list a {
+        color: white;
+        font-size: 24px;
+        opacity: 0;
+        
+    }
+
+    .nav-list li:nth-child(1) a {
+        transition: 0.5s 0.2s;
+    }
+
+    .nav-list li:nth-child(2) a {
+        transition: 0.5s 0.4s;
+    }
+
+    .nav-list li:nth-child(3) a {
+        transition: 0.5s 0.6s;
+    }
+
+    .nav-list li:nth-child(4) a {
+        transition: 0.5s 0.8s;
+    }
+
+
+    /* ESTILOS ACTIVES */
+
+    .nav.active .nav-list {
+        clip-path: circle(1500px at 10% 2%);
+        pointer-events: all;
+
+    }
+
+    
+    .nav.active a {
+        opacity: 1;
+
+    }
+}
+
+/* Corpo do site */
+
+
+
+@media (min-width: 500px) and (max-width: 990px) {
+    .containertxt_img {
+        display: flex;
+        flex-direction: column;
+        height: 1200px;
+        background-color: blue;
+    }
+
+    .containertxt_img .containertxt {
+        width: 100%;
+    }
+
+    .containertxt_img .containerimg {
+        width: 100%;
+    }
+
+
+
+        .subcontainer {
+            display: flex;
+            flex-direction: column;
+            height: 1200px;
+        }
+
+}
+
+@media (max-width: 500px) {
+    .subheader {
+        height: 400px;
+    }
+
+
+
+
+    .containertxt_img {
+        display: flex;
+        flex-direction: column;
+        height: 2000px;
+        background-color: blue;
+    }
+
+    .containertxt_img .containertxt {
+        width: 100%;
+    }
+
+    .containertxt_img .containerimg {
+        width: 100%;
+    }
+
+
+
+        .subcontainer {
+            display: flex;
+            flex-direction: column;
+            height: 2000px;
+        }
+
+}
+
+
 
