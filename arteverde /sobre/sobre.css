@@ -404,6 +404,21 @@ RESPONSIVIDADE
     }
 }
 
+@media (max-width: 570px) {
+
+    #ferramenta-busca {
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+
+    #button-login {
+        display: none;
+    }
+}
+
+
 /* Corpo do site */
 
 
@@ -464,6 +479,10 @@ RESPONSIVIDADE
             flex-direction: column;
             height: 2000px;
         }
+
+    #ferramenta-busca {
+        display: none;
+    }
 
 }
 
