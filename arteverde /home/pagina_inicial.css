@@ -430,7 +430,7 @@ footer {
     .bott {
         width: 140px;
         height: 30px;
-        font-size: 10px;
+        font-size: 18px;
     }
 }
 
@@ -661,74 +661,6 @@ RESPONSIVIDADE
     #button-login {
         display: none;
     }
-}
-
-
-/* Corpo do site */
-
-
-
-@media (min-width: 500px) and (max-width: 990px) {
-    .containertxt_img {
-        display: flex;
-        flex-direction: column;
-        height: 1200px;
-
-    }
-
-    .containertxt_img .containertxt {
-        width: 100%;
-    }
-
-    .containertxt_img .containerimg {
-        width: 100%;
-    }
-
-
-
-        .subcontainer {
-            display: flex;
-            flex-direction: column;
-            height: 1200px;
-        }
-
-}
-
-@media (max-width: 500px) {
-    .subheader {
-        height: 400px;
-    }
-
-
-
-
-    .containertxt_img {
-        display: flex;
-        flex-direction: column;
-        height: 2000px;
-
-    }
-
-    .containertxt_img .containertxt {
-        width: 100%;
-    }
-
-    .containertxt_img .containerimg {
-        width: 100%;
-    }
-
-
-
-        .subcontainer {
-            display: flex;
-            flex-direction: column;
-            height: 2000px;
-        }
-
-    #ferramenta-busca {
-        display: none;
-    }
-
 }
 
 
