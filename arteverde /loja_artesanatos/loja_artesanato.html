@@ -5,39 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artesanato</title>
     <link rel="stylesheet" href="loja_artesanato.css">
+    <script src="https://kit.fontawesome.com/1e592b5726.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="tudo">
         <!--- Header -->
-            <div class="header">
-                <div class="busca">
-                    
-                    <div class="logospace">
+        <div class="header">
+            <div class="busca">
+                
+                <div class="logospace">
                     <img id="logotipo" src="./imgs/Arteverde.png">
-                    </div>
-    
-                    <form action="#" method="post">
-                        <input type="text" name="search" id="search" placeholder="Faça sua Busca">
-                        <button type="submit"><i class="fas fa-search"></i></button>
-                    </form>
-    
                 </div>
-                <div class="menu">
-                    <nav class="nav">
-                        <ul class="nav-list">
-                            <li><a href="..\home\index.html">Página Inicial</a></li>
-                            <li><a href="..\loja\loja_plantas.html">Plantas</a></li>
-                            <li><a href="..\loja_artesanatos\loja_artesanato.html">Artesanatos</a></li>
-                            <li><a href="..\sobre\sobre.html">Contato</a></li>
-                        </ul>
-                    </nav>
-    
-                    <div class="right-nav">
-                        <a href="..\registro\Tela_de_cadastro.html" class="button" id="button-register">Registrar</a>
-                        <a href="..\login\Tela_de_login.html" class="button" id="button-login">Entrar</a>
-                    </div>
+
+                <form id="ferramenta-busca" action="#" method="post">
+                    <input type="text" name="search" id="search" placeholder="Faça sua Busca">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+
+            </div>
+            <div class="menu">
+                <nav class="nav">
+                    <div class=margin-nav></div>
+                    <button class="hamburger"></button>
+                    <ul class="nav-list">
+                        <li><a href="..\home\index.html">Página Inicial</a></li>
+                        <li><a href="..\loja\loja_plantas.html">Plantas</a></li>
+                        <li><a href="..\loja_artesanatos\loja_artesanato.html">Artesanatos</a></li>
+                        <li><a href="..\sobre\sobre.html">Contato</a></li>
+                    </ul>
+                </nav>
+
+                <div class="right-nav">
+                    <a href="..\registro\Tela_de_cadastro.html" class="button" id="button-register">Registrar</a>
+                    <a href="..\login\Tela_de_login.html" class="button" id="button-login">Entrar</a>
                 </div>
             </div>
+        </div>
         <!----->
      <!--Banner-->
     
@@ -155,5 +158,13 @@
                 </div>        
             </div>
         </div>
+
+        <script>
+            const hamburger = document.querySelector(".hamburger");
+            const nav = document.querySelector(".nav");
+    
+            hamburger.addEventListener("click", () => nav.classList.toggle("active"));
+        </script>
+    
 </body>
 </html>
