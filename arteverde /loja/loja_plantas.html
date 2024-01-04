@@ -14,10 +14,10 @@
             <div class="busca">
                 
                 <div class="logospace">
-                <img id="logotipo" src="./imgs/Arteverde.png">
+                    <img id="logotipo" src="./imgs/Arteverde.png">
                 </div>
 
-                <form action="#" method="post">
+                <form id="ferramenta-busca" action="#" method="post">
                     <input type="text" name="search" id="search" placeholder="Faça sua Busca">
                     <button type="submit"><i class="fas fa-search"></i></button>
                 </form>
@@ -25,6 +25,8 @@
             </div>
             <div class="menu">
                 <nav class="nav">
+                    <div class=margin-nav></div>
+                    <button class="hamburger"></button>
                     <ul class="nav-list">
                         <li><a href="..\home\index.html">Página Inicial</a></li>
                         <li><a href="..\loja\loja_plantas.html">Plantas</a></li>
@@ -157,5 +159,12 @@
             </div>        
         </div>
     </div>
+
+        <script>
+            const hamburger = document.querySelector(".hamburger");
+            const nav = document.querySelector(".nav");
+            
+            hamburger.addEventListener("click", () => nav.classList.toggle("active"));
+        </script>
 </body>
 </html>
