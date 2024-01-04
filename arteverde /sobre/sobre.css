@@ -8,10 +8,6 @@
 
 /* Container do cabeçalho*/
 
-.hamburger {
-    display: none;
-}
-
 li a {
     text-decoration: none;
 }
@@ -124,8 +120,7 @@ li a {
         font-size: 14px;
         letter-spacing: .08em;
         text-transform: uppercase;
-        position: relative;
-        overflow: hidden;
+
 
       }
 
@@ -302,6 +297,9 @@ RESPONSIVIDADE
 ==============
 */
 
+.hamburger {
+    display: none;
+}
 
 .margin-nav {
     display: none;
