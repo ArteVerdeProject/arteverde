@@ -6,11 +6,11 @@
     
 }
 
-li a {
-    text-decoration: none;
-}
-
 /* Container do cabeçalho*/
+
+.hamburger {
+    display: none;
+}
 
 li a {
     text-decoration: none;
@@ -151,24 +151,25 @@ li a {
 }
 
     .banner {
+        height: 80%;
         display: flex;
         align-items: center;
-        height: 70%;
         background-color: #e0ebcf;
     }
 
         .banner .text {
-            padding: 10%;
+            padding: 20px;
             margin-left: 30px;
             color:#303030;
-            height: 150px;
-            width: 620px;
+
         }
 
     .titlebanner {
+        margin-top: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
+
     }
 
         .nav-sublist {
@@ -180,6 +181,7 @@ li a {
             background-color: #fafaf7;
         }
 
+        
 /* Container da imagem + texto*/
 
 .containertxt_img {
@@ -301,8 +303,17 @@ RESPONSIVIDADE
 */
 
 
+.margin-nav {
+    display: none;
+}
+
 /* Cabeçalho */
 @media (max-width: 790px) {
+
+    .margin-nav {
+        display: block;
+    }
+
     .nav {
         display: flex;
         flex-direction: row;
