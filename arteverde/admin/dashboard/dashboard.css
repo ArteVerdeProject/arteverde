@@ -435,7 +435,7 @@ RESPONSIVIDADE
 
 /* Corpo da página */
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
     .paineis {
         flex-direction: column;
     }
@@ -460,5 +460,12 @@ RESPONSIVIDADE
 
     .box1 .total {
         margin: 25px;
+    }
+
+    .box2 {
+        flex-direction: column;
+        height: 600px;
+        align-items: center;
+        justify-content: center;
     }
 }
