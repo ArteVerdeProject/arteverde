@@ -145,7 +145,7 @@ li a {
     flex-direction: column;
     padding: 10px;
     width: 20%;
-    background-color: rgb(207, 207, 207);
+    background-color: whitesmoke;
     align-items: center;
 }
 
@@ -156,9 +156,12 @@ li a {
     align-items: center;
     width: 90%;
     height: 20%;
-    background-color: rgb(207, 207, 207);
+    background-color: white;
+    border-radius: 20px;
     overflow: hidden;
+
 }
+
 table {
     margin-top: 2%;
     margin-left: 5%;
@@ -366,4 +369,26 @@ RESPONSIVIDADE
         display: none;
     }
 
+}
+
+/* Corpo da página */
+
+@media (max-width: 750px) {
+    .paineis {
+        flex-direction: column;
+    }
+
+    .secoes {
+        width: 100%;
+        height: 50px;
+        flex-direction: row;
+    }
+
+    .painel_lateral_E {
+        width: 100%;
+    }
+
+    table {
+        width: 95%;
+    }
 }
