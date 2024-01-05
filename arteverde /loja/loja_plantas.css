@@ -1,10 +1,10 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif
-
+    font-family: Arial, Helvetica, sans-serif;
+    color: #303030;
+    
 }
-
 
 /* Container do cabeçalho*/
 
@@ -138,301 +138,75 @@ li a {
 
 /* */
 
-/*Tela principal e nome da loja*/
-
-
-.banner-principal {
-    color: white;
-    height: 200px;
-    width: 100%;
-    margin: auto;
-    position: relative;
-    
-    justify-content: center;
-    align-items: center;
+#sectionproduto { 
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      display: flex;
+      width:100%;
+      align-content: space-around;
+      justify-content: center;
+      flex-direction: row;
+      
 }
 
-    .banner-principal img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-    }
+#produtoimg {
+    background-color: rgb(156, 156, 156);
+    height: 400px;
+    width: 400px;
+    display: flex;
+}
+#produtoinfo {
+    padding: 50px;
+    bottom: 200px;
+    height: 100%;
 
-.titulo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color:#14342b;
-        height: 100px;
-    }
-
-    #titulo_pag{
-        color: white;
-        font-size: 60px;
-    }
-
-    
-/* */
-
-
-#pegavalor{
-    width: 100%;
 }
 
-#aplicar{
+#produtoinfo p,h1 {
+    margin-bottom: 20px;
+}
+
+#sectionrelacionados{
+    flex-direction: column;
+}
+#divcards {
+    display: flex;
+    flex-direction: row;
+}
+.cards {
+    border: 1px rgb(90, 90, 90) solid;
+    border-radius: 10px;
     width: 30%;
-    overflow: hidden !important;
+    margin-left: 10%;
 }
-
-
-.b_texto{
-    border: 0px;
-    padding: 2px;
+.imgrelacionado {
+    border-radius: 10px;
+    width: 100%;
 }
-
-.secao{
-    height: 300px;
-}
-
-
-.paineis{
-    display: flex;
-}
-
-
-.painel_lateral_E{
-    display: flex;
-    align-items: center;
+.relacionadoinfo {
     flex-direction: column;
+    align-items: center;
+    text-align: center;
     padding: 10px;
-    width: 20%;
-    background-color: #009145;
 }
-
-.painel_lateral_E h2 {
-    color: white;
+h5 {
+    margin-bottom: 10px;
 }
-
-/* Tem erro */
-.filtros{
+.relacionadoinfo a {
+    padding-top: 10px;
+}
+footer {
+    margin-top: 100px;
     display: flex;
+    text-align: center;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    background-color:  #efeff0;
-    border-radius: 20px;
-    height: 30%;
-    width: 90%;
-    overflow: hidden !important;
+    align-items:center;
+    height: 100px;
+    background-color: rgb(161, 161, 161);
 }
-
-.filtros h3 {
-    margin-top: 15px;
-}
-
-/* Tem erro */
-.tipos{
-    border-radius: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #efeff0;
-    margin: 10px;
-    height: 60%;
-    width: 90%;
-}
-
-.tipos ul {
-    margin: 10px;
-
-}
-
-.tipos ul li {
-    padding: 5px;
-}
-
-/* Tem erro */
-.valores{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    border-radius: 20px;
-    background-color: #14342b;
-    height: 18%;
-    width: 90%;
-    padding-bottom: 10px;
-    align-items: center;
-    overflow: hidden !important;
-}
-
-.valores h3 {
-    margin-top: 20px;
-    color: white;
-}
-
-/* Tem erro */
-.aplicarvalores{
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.painel_lateral_D{
-    display: flex;
-    width: 80%;
-    justify-content: center;
-}
-
-.estufa {
-    display: flex;
-    width: 100%;
-}
-
-    .imagem{
-        object-fit: cover;
-        height: 80%;
-        width: 100%;
-    }
-
-        .dados {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            height: 20%;
-
-        }
-
-    .tipos ul li {
-        list-style-type: none;
-    }
-
-/*Vitrine*/
-
-.container_principal {
-    background-color: white;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-    .vitrine {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .vitrine .estufa {
-        background-color: #efeff0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        width: 90%;
-        
-    }
-
-        .produto_organico {
-            color: white;
-            margin: 10px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            width: 250px;
-            height: 400px;
-
-        }
-
-            .img_produto {
-                width: 100%;
-                height: 80%;
-            }
-
-            .imagee {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-
-        .rotulo {
-            background-color: #14342b;
-            width: 100%;
-            height: 20%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-            .tipo_prod {
-                font-weight: bold;
-                font-size: 16px;
-                text-transform: uppercase;
-                letter-spacing: .08em;
-                
-            }
-
-            .rotulo p {
-                font-size: 14px;
-            }
-
-        .botao_comprar {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            background-color: #009145;
-            width: 150px;
-            height: 30px;
-            border-radius: 15px;
-            margin-top: 5px;
-        }
-
-            .botao_comprar a {
-                color: white;
-                border-radius: 100%;
-                padding: 10px 40px;
-                text-decoration: none;
-            }
-
-            .botao_comprar a:hover {
-                color: #fde311;
-                border-radius: 100%;
-                padding: 10px 40px;
-                text-decoration: none;
-            }
-            .botao-amarelo {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-weight: bold;
-                padding: 12px 62px;
-                border-radius: 3px;
-                box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
-                line-height: 1.25;
-                background: #fde311;
-                text-decoration: none;
-                color: #303030;
-                font-size: 14px;
-                letter-spacing: .08em;
-                text-transform: uppercase;
-
-            }
-
-/* 
-==============
-RESPONSIVIDADE
-==============
-*/
-
-.hamburger {
-    display: none;
-}
-
-.margin-nav {
-    display: none;
+footer p {
+    position: relative;
+    top: 30px;
 }
 
 /* Cabeçalho */
@@ -549,88 +323,18 @@ RESPONSIVIDADE
 }
 
 
-/* Corpo do site */
-
-
-
-@media (min-width: 500px) and (max-width: 990px) {
-    .containertxt_img {
-        display: flex;
-        flex-direction: column;
-        height: 1200px;
-
-    }
-
-    .containertxt_img .containertxt {
-        width: 100%;
-    }
-
-    .containertxt_img .containerimg {
-        width: 100%;
-    }
-
-
-
-        .subcontainer {
-            display: flex;
-            flex-direction: column;
-            height: 1200px;
-        }
-
-}
-
-@media (max-width: 500px) {
-    .subheader {
-        height: 400px;
-    }
-
-
-
-
-    .containertxt_img {
-        display: flex;
-        flex-direction: column;
-        height: 2000px;
-
-    }
-
-    .containertxt_img .containertxt {
-        width: 100%;
-    }
-
-    .containertxt_img .containerimg {
-        width: 100%;
-    }
-
-
-
-        .subcontainer {
-            display: flex;
-            flex-direction: column;
-            height: 2000px;
-        }
-
-    #ferramenta-busca {
-        display: none;
-    }
-
-}
-
-
 /* Corpo da página */
 
-
-@media (max-width: 1000px) {
-    .paineis {
+@media (max-width: 700px) {
+    
+    #sectionproduto { 
         flex-direction: column;
     }
-    .painel_lateral_E {
-        width: 100%;
 
+    #divcards {
+        flex-direction: column;
     }
-
-    .aplicarvalores {
-        width: 60%;
-
+    .cards {
+        width: 70%;
     }
 }
