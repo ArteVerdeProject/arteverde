@@ -1,20 +1,28 @@
 body {
     margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Container do cabeçalho*/
+
+li a {
+    text-decoration: none;
+}
+
 .header {
 
     background-color: #fafaf7;
     height: 120px;
-    border-bottom: 1px black solid;
+
 }
 
     .busca {
+        color: black;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background-color: #fde311;
+        background-color: #14342b;
         height: 60%;
 
     }
@@ -80,11 +88,6 @@ body {
     height: 40%;
     justify-content: space-between;
 
-
-}
-
-li a {
-    text-decoration: none;
 }
 
     .nav-list {
@@ -97,6 +100,10 @@ li a {
     .right-nav {
         margin: 40px;
 
+    }
+
+    li a {
+        color: #303030;
     }
 
     #button-login {
@@ -128,7 +135,6 @@ li a {
 
 
 /* */
-
 .paineis{
     height: 1000px;
     display: flex;
@@ -160,16 +166,204 @@ table {
     width: 70%;
     justify-content: center;
 }
-tr {
-    
-}
-td {
 
-}
 
 a {
     color: black;
 }
 .ckbx {
     width: 20px;
+}
+
+/* 
+==============
+RESPONSIVIDADE
+==============
+*/
+
+.hamburger {
+    display: none;
+}
+
+.margin-nav {
+    display: none;
+}
+
+/* Cabeçalho */
+@media (max-width: 790px) {
+
+    .margin-nav {
+        display: block;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .margin-nav {
+        width: 50px;
+    }
+
+    .hamburger {
+        display: block;
+        z-index: 1;
+        background: none;
+        border: none;
+        border-top: 3px solid #14342b;
+        cursor: pointer;
+
+
+        
+
+    }
+    .hamburger::before,
+    .hamburger::after {
+        content: "   ";
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: #14342b;
+        margin-top: 5px;
+        border-radius: 5px;
+    }
+
+    .nav-list {
+
+        position: fixed;
+        top: 0;
+        left:0;
+        width: 100vw;
+        height: 100vh;
+
+        background-color: #14342b;
+        clip-path: circle(100px at 10% -100%);
+        transition: 0.6s ease-out;
+        transition: 0.6s ease-in;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        pointer-events: none;
+    }
+
+    .nav-list a {
+        color: white;
+        font-size: 24px;
+        opacity: 0;
+        
+    }
+
+    .nav-list li:nth-child(1) a {
+        transition: 0.5s 0.2s;
+    }
+
+    .nav-list li:nth-child(2) a {
+        transition: 0.5s 0.4s;
+    }
+
+    .nav-list li:nth-child(3) a {
+        transition: 0.5s 0.6s;
+    }
+
+    .nav-list li:nth-child(4) a {
+        transition: 0.5s 0.8s;
+    }
+
+
+    /* ESTILOS ACTIVES */
+
+    .nav.active .nav-list {
+        clip-path: circle(1500px at 10% 2%);
+        pointer-events: all;
+
+    }
+
+    
+    .nav.active a {
+        opacity: 1;
+
+    }
+}
+
+@media (max-width: 570px) {
+
+    #ferramenta-busca {
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+
+    #button-login {
+        display: none;
+    }
+}
+
+
+/* Corpo do site */
+
+
+
+@media (min-width: 500px) and (max-width: 990px) {
+    .containertxt_img {
+        display: flex;
+        flex-direction: column;
+        height: 1200px;
+
+    }
+
+    .containertxt_img .containertxt {
+        width: 100%;
+    }
+
+    .containertxt_img .containerimg {
+        width: 100%;
+    }
+
+
+
+        .subcontainer {
+            display: flex;
+            flex-direction: column;
+            height: 1200px;
+        }
+
+}
+
+@media (max-width: 500px) {
+    .subheader {
+        height: 400px;
+    }
+
+
+
+
+    .containertxt_img {
+        display: flex;
+        flex-direction: column;
+        height: 2000px;
+
+    }
+
+    .containertxt_img .containertxt {
+        width: 100%;
+    }
+
+    .containertxt_img .containerimg {
+        width: 100%;
+    }
+
+
+
+        .subcontainer {
+            display: flex;
+            flex-direction: column;
+            height: 2000px;
+        }
+
+    #ferramenta-busca {
+        display: none;
+    }
+
 }
