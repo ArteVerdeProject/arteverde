@@ -148,6 +148,7 @@ li a {
       flex-direction: row;
       
 }
+
 #produtoimg {
     background-color: rgb(156, 156, 156);
     height: 400px;
@@ -175,7 +176,7 @@ li a {
 .cards {
     border: 1px rgb(90, 90, 90) solid;
     border-radius: 10px;
-    width: 20%;
+    width: 30%;
     margin-left: 10%;
 }
 .imgrelacionado {
@@ -318,5 +319,22 @@ footer p {
 
     #button-login {
         display: none;
+    }
+}
+
+
+/* Corpo da página */
+
+@media (max-width: 700px) {
+    
+    #sectionproduto { 
+        flex-direction: column;
+    }
+
+    #divcards {
+        flex-direction: column;
+    }
+    .cards {
+        width: 70%;
     }
 }
