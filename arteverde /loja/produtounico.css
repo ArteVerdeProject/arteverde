@@ -7,6 +7,11 @@
 }
 
 /* Container do cabeçalho*/
+
+li a {
+    text-decoration: none;
+}
+
 .header {
 
     background-color: #fafaf7;
@@ -15,10 +20,11 @@
 }
 
     .busca {
+        color: black;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background-color: #fde311;
+        background-color: #14342b;
         height: 60%;
 
     }
@@ -86,10 +92,6 @@
 
 }
 
-li a {
-    text-decoration: none;
-}
-
     .nav-list {
         display: flex;
         margin-left: 40px;
@@ -100,6 +102,10 @@ li a {
     .right-nav {
         margin: 40px;
 
+    }
+
+    li a {
+        color: #303030;
     }
 
     #button-login {
@@ -127,6 +133,11 @@ li a {
         color: #303030;
         text-decoration: none;
       }
+      
+
+
+/* */
+
 #sectionproduto { 
       padding-top: 3rem;
       padding-bottom: 3rem;
@@ -195,4 +206,117 @@ footer {
 footer p {
     position: relative;
     top: 30px;
+}
+
+/* Cabeçalho */
+@media (max-width: 790px) {
+
+    .margin-nav {
+        display: block;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .margin-nav {
+        width: 50px;
+    }
+
+    .hamburger {
+        display: block;
+        z-index: 2;
+        background: none;
+        border: none;
+        border-top: 3px solid #14342b;
+        cursor: pointer;
+
+
+        
+
+    }
+    .hamburger::before,
+    .hamburger::after {
+        content: "   ";
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: #14342b;
+        margin-top: 5px;
+        border-radius: 5px;
+    }
+
+    .nav-list {
+
+        position: fixed;
+        top: 0;
+        left:0;
+        width: 100vw;
+        height: 100vh;
+
+        background-color: #14342b;
+        clip-path: circle(100px at 10% -100%);
+        transition: 0.6s ease-out;
+        transition: 0.6s ease-in;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        pointer-events: none;
+
+        z-index: 1;
+    }
+
+    .nav-list a {
+        color: white;
+        font-size: 24px;
+        opacity: 0;
+        
+    }
+
+    .nav-list li:nth-child(1) a {
+        transition: 0.5s 0.2s;
+    }
+
+    .nav-list li:nth-child(2) a {
+        transition: 0.5s 0.4s;
+    }
+
+    .nav-list li:nth-child(3) a {
+        transition: 0.5s 0.6s;
+    }
+
+    .nav-list li:nth-child(4) a {
+        transition: 0.5s 0.8s;
+    }
+
+
+    /* ESTILOS ACTIVES */
+
+    .nav.active .nav-list {
+        clip-path: circle(1500px at 10% 2%);
+        pointer-events: all;
+
+    }
+
+    
+    .nav.active a {
+        opacity: 1;
+
+    }
+}
+
+@media (max-width: 570px) {
+
+    #ferramenta-busca {
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+
+    #button-login {
+        display: none;
+    }
 }
