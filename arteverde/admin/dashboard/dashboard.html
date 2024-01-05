@@ -96,10 +96,12 @@
                                     datasets: [{
                                         label: "Quantidade de vendas",
                                         data: valores,
-                                        borderWifth: 1
+                                        borderWidth: 1
                                     }]
                                 },
                                 options: {
+                                    maintainAspectRatio: false,
+                                    responsive: true,
                                     scales: {
                                         y: {
                                             beginAtZero: true
@@ -135,6 +137,15 @@
                                         borderColor: '#444444',
                                         backgroundColor: 'transparent'
                                 }]
+                                },
+                                options: {
+                                    maintainAspectRatio: false,
+                                    responsive: true,
+                                    scales: {
+                                        y: {
+                                            beginAtZero: true
+                                        }
+                                    }
                                 }
                             });
                         </script>
@@ -176,6 +187,15 @@
                                     },
 
                                 ]
+                                },
+                                options: {
+                                    maintainAspectRatio: false,
+                                    responsive: true,
+                                    scales: {
+                                        y: {
+                                            beginAtZero: true 
+                                        }
+                                    }
                                 }
                             });
                         </script>
