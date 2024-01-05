@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin - Produtos</title>
     <link rel="stylesheet" href="./adminprodutos.css">
+    <script src="https://kit.fontawesome.com/1e592b5726.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
 
@@ -14,10 +16,10 @@
         <div class="busca">
             
             <div class="logospace">
-            <img id="logotipo" src="Arteverde.png">
+                <img id="logotipo" src="./imgs/Arteverde.png">
             </div>
 
-            <form action="#" method="post">
+            <form id="ferramenta-busca" action="#" method="post">
                 <input type="text" name="search" id="search" placeholder="Faça sua Busca">
                 <button type="submit"><i class="fas fa-search"></i></button>
             </form>
@@ -25,17 +27,19 @@
         </div>
         <div class="menu">
             <nav class="nav">
+                <div class=margin-nav></div>
+                <button class="hamburger"></button>
                 <ul class="nav-list">
-                    <li><a href="#">Página Inicial</a></li>
-                    <li><a href="#">Plantas</a></li>
-                    <li><a href="#">Artesanatos</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="..\..\home\index.html">Página Inicial</a></li>
+                    <li><a href="..\..\loja\loja_plantas.html">Plantas</a></li>
+                    <li><a href="..\..\loja_artesanatos\loja_artesanato.html">Artesanatos</a></li>
+                    <li><a href="..\..\sobre\sobre.html">Contato</a></li>
                 </ul>
             </nav>
 
             <div class="right-nav">
-                <a href="#" class="button" id="button-register">Registrar</a>
-                <a href="#" class="button" id="button-login">Entrar</a>
+                <a href="..\..\registro\Tela_de_cadastro.html" class="button" id="button-register">Registrar</a>
+                <a href="..\..\login\Tela_de_login.html" class="button" id="button-login">Entrar</a>
             </div>
         </div>
     </div>
