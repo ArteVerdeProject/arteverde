@@ -546,3 +546,21 @@ RESPONSIVIDADE
         display: none;
     }
 }
+
+/* Corpo da página */
+
+
+@media (max-width: 1000px) {
+    .paineis {
+        flex-direction: column;
+    }
+    .painel_lateral_E {
+        width: 100%;
+
+    }
+
+    .aplicarvalores {
+        width: 60%;
+
+    }
+}
