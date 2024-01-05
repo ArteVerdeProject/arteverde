@@ -450,5 +450,15 @@ RESPONSIVIDADE
         width: 100%;
     }
 
+    .box1 {
+        align-items: center;
+        justify-content: center;
+        height: 500px;
 
+        flex-direction: column;
+    }   
+
+    .box1 .total {
+        margin: 25px;
+    }
 }
